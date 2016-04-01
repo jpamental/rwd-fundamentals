@@ -1,0 +1,343 @@
+/*! site styles */
+/*
+	Breakpoints
+	s-tab:   25em / 400px 
+	l-tab:   43.75em / 700px
+	desk:    56.25em / 900px
+	m-desk:  71.875em / 1150px
+	l-desk:  81.25em / 1300px
+
+MQ Block:
+
+@media only screen and (min-width: 25em) {
+    
+}
+
+@media only screen and (min-width: 43.75em) {
+    
+}
+
+@media only screen and (min-width: 56.25em) {
+    
+}
+
+@media only screen and (min-width: 81.25em) {
+    
+}
+
+Colors:
+
+Orange: #DC5705;
+Lightest Blue: #B7D0E8;
+Light Blue: 8BB1DD;
+Blue: #4A90E2;
+Dark Blue: #35475B;
+
+Fonts: 
+
+Serif: "Alegreya", Georgia, "New Times Roman", serif;
+Sans-serif: "Alegreya Sans", Helvetica, Arial, sans-serif;
+
+
+*/
+
+/* ==========================================================================
+   HTML Elements
+   ========================================================================== */
+p, 
+th, 
+td, 
+ul, 
+li {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h1 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h2 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h3 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h4 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h5 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+h6 {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+}
+
+p {
+	margin: 0 0 1em 0;
+}
+
+img {
+	height: auto;
+	margin: 0;
+	max-width: 100%;
+	padding: 0;
+	width: 100%;
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+}
+
+/* ==========================================================================
+   Responsive Typography
+   ========================================================================== */
+
+p {
+	
+}
+@media only screen and (min-width: 81.25em) {
+    p {
+	    font-size: 1.125em;
+	}
+}
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
+.section-content {
+	margin: 0 auto;
+	padding: 0 0.5em;
+}
+	@media only screen and (min-width: 25em) {
+	    .section-content {
+		    max-width: 98%;
+	    }
+	}
+	
+	@media only screen and (min-width: 43.75em) {
+	    .section-content {
+		    max-width: 75%;
+	    }
+	}
+	
+	@media only screen and (min-width: 56.25em) {
+	    .section-content {
+		    max-width: 72%;
+	    }
+	}
+	
+	@media only screen and (min-width: 71.875em) {
+	    .section-content {
+		    max-width: 54em;
+	    }
+	}
+	
+	@media only screen and (min-width: 81.25em) {
+	    .section-content {
+		    max-width: 60em;
+	    }
+	}
+
+
+
+
+/* ==========================================================================
+   Modules
+   ========================================================================== */
+
+/* header styles */
+#banner {
+	background-size: 1em 1em;
+	background-color: #DC5705;
+	background-image: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+	                  transparent 75%, transparent);
+	background-image: -moz-linear-gradient(-45deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+	                  transparent 75%, transparent);
+	background-image: linear-gradient(135deg, rgba(0, 0, 0, .05) 25%, transparent 25%,
+	                  transparent 50%, rgba(0, 0, 0, .05) 50%, rgba(0, 0, 0, .05) 75%,
+	                  transparent 75%, transparent);
+	color: #ffffff;
+}
+
+.branding {
+	margin: 0;
+	padding: 1em 0;
+}
+
+#logo {
+	float: left;
+	margin: 0 1em 0 0;	
+	width: 5em;
+}
+	@media only screen and (min-width: 56.25em) {
+	    #logo {
+		    margin-left: -8em;
+		    width: 7em;
+	    }
+	}
+
+.branding h1 {
+	margin: 0.5em 0 0 0;
+}
+
+.branding h2 {
+	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-style: italic;
+	font-weight: normal;
+	margin: 0;
+}
+
+/* /header styles */
+
+/* footer styles */
+
+#footer {
+	background-color: #35475B;
+	color: #ffffff;
+	padding-top: 3em;
+	padding-bottom: 5em;
+}
+
+#footer a:link, 
+#footer a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+#footer a:hover {
+	color: #B7D0E8;
+	text-decoration: none;
+}
+
+.footer-contact {
+	padding-bottom: 1em;
+	width: 100%;
+}
+	@media only screen and (min-width: 43.75em) {
+	    .footer-contact {
+		    float: left;
+		    width: 50%;
+	    }
+	}
+.footer-contact p {
+	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+}
+.footer-contact .name {
+	font-family: "Alegreya", Georgia, "New Times Roman", serif;
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+.nav-footer {
+	float: left;
+	width: 50%;
+}
+	@media only screen and (min-width: 43.75em) {
+	    .nav-footer {
+		    width: 30%;
+	    }
+	}
+.nav-footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.nav-footer a {
+	font-size: 1.25em;
+	font-weight: bold;
+	line-height: 1.5; 
+}
+
+.footer-social-links {
+	float: left;
+	width: 50%;
+}
+	@media only screen and (min-width: 43.75em) {
+	    .footer-social-links {
+		    width: 20%;
+	    }
+	}
+.footer-social-links ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.footer-social-links a {
+	font-size: 1.25em;
+	line-height: 1.5;
+}
+
+/* /footer styles */
+
+/* content area styles */
+@media only screen and (min-width: 25em) {
+    .content-area {
+	    padding-bottom: 3em;
+    }
+}
+@media only screen and (min-width: 43.75em) {
+    .content-area {
+	    padding-bottom: 5em;
+    }
+}
+
+
+/* /content area styles */
+
+/* figure styles */
+figure.small {
+	width: 50%;
+}
+@media only screen and (min-width: 25em) {
+    figure.small {
+	    width: 33%;
+    }
+}
+@media only screen and (min-width: 43.75em) {
+    figure.small {
+	    width: 25%;
+    }
+}
+
+
+figure.circle {
+	-webkit-shape-outside: circle();
+    shape-outside: circle();
+}
+figure.circle img {
+	border-radius: 50%;
+}
+figure.left {
+	float: left;
+	margin-right: 1em;
+}
+figure.right {
+	float: right;
+	margin-left: 1em;
+}
+figure.left.hang-50 {
+	margin-left: 0;
+}
+figure.right.hang-50 {
+	margin-right: 0;
+}
+@media only screen and (min-width: 43.75em) {
+    figure.left.hang-50 {
+	    margin-left: -12.5%;
+    }
+    figure.right.hang-50 {
+	    margin-right: -12.5%;
+    }
+}
+
+
+/* /figure styles */
+
