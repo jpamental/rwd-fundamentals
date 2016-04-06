@@ -214,7 +214,17 @@ p {
 		    margin-top: 0.5em;
 	    }
 	}
+.branding h1 a:link, 
+.branding h1 a:visited {
+	color: #ffffff; 
+	text-decoration: none;
+}
 
+.branding h1 a:hover, 
+.branding h1 a:focus {
+	color: #ffffff; 
+	text-decoration: underline;
+}
 
 .branding h2 {
 	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
