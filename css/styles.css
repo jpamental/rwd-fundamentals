@@ -259,6 +259,7 @@ body:before {
 	    #nav {
    			margin-top: -1em;
 		    max-width: 75%;
+		    padding: 0;
 	    }
 	}
 	
@@ -643,7 +644,7 @@ body:before {
 		width: 12.5em;
 		margin-top: 0;
 		padding: 0.25em 0;
-		background: rgba(183,202,238,0.95);
+		background: rgba(183,208,232,0.95);
 		border: 1px solid #8BB1DD; 
 	}
 }
