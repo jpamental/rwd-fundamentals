@@ -218,6 +218,7 @@ p {
 .branding h1 a:visited {
 	color: #ffffff; 
 	text-decoration: none;
+	text-shadow: 0px 1px 1px rgba(0,0,0,0.75);
 }
 
 .branding h1 a:hover, 
