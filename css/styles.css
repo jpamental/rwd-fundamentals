@@ -354,7 +354,7 @@ body:before {
 	line-height: 1.4; 
 }
 	@media screen and (min-width: 43.75em) {
-		.nav-menu {
+		.flexbox .nav-menu {
 			display: -webkit-flex;
 			display: flex;
 			-webkit-flex-direction: row;
@@ -410,6 +410,9 @@ body:before {
 		zoom: 1;
 		*display: inline;
 		*vertical-align: auto;
+	}
+	.flexbox .menu-item, 
+	.flexbox .page_item {
 		flex-grow: 1;
 		text-align: center;
 	}
@@ -807,6 +810,7 @@ figure.small {
 figure.circle {
 	-webkit-shape-outside: circle();
     shape-outside: circle();
+    /* shape-box is not supported yet, but this is the syntax that should work when it is */
     -webkit-shape-box: content-box;
     shape-box: content-box;
 }
@@ -831,11 +835,13 @@ figure.right.hang-50 {
 	    figure.left.hang-50 {
 		    margin-left: -12.5%;
 		    /* below compensates for lack of support for 'shape-box: content-box' */
+		    -webkit-shape-outside: polygon(35% 0, 75% 15%, 95% 35%, 100% 50%,95% 65%,75% 85%, 35% 100%);
 		    shape-outside: polygon(35% 0, 75% 15%, 95% 35%, 100% 50%,95% 65%,75% 85%, 35% 100%);
 	    }
 	    figure.right.hang-50 {
 		    margin-right: -12.5%;
 		    /* below compensates for lack of support for 'shape-box: content-box' */
+		    -webkit-shape-outside: polygon(50% 0, 15% 15%, 5% 35%, 0 50%,5% 65%,15% 85%, 50% 100%);
 		    shape-outside: polygon(50% 0, 15% 15%, 5% 35%, 0 50%,5% 65%,15% 85%, 50% 100%);
 	    }
 	}
