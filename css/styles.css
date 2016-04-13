@@ -62,8 +62,6 @@ h1 {
 	font-family: "Alegreya", Georgia, "New Times Roman", serif;
 	font-size: 3em;
 	font-weight: 900;
-	margin-top: 0.5em;
-	margin-bottom: 0.25em;
 }
 
 h2 {
@@ -121,31 +119,46 @@ p {
 	line-height: 1.4375;
 	max-width: 43em;
 }
+.wf-inactive p {
+	font-family: Georgia, "New Times Roman", serif;
+	font-size: 0.975em;
+	letter-spacing: -0.4px;
+	line-height: 1.5;
+}
 	@media only screen and (min-width: 81.25em) {
 	    p {
 		    font-size: 1.125em;
 		    line-height: 1.5;
 		}
-	}
-
-.wf-inactive p {
-	font-family: Georgia, "New Times Roman", serif;
-	font-size: 1em;
-}
-	@media only screen and (min-width: 81.25em) {
 	    .wf-inactive p {
-		    font-size: 1.125em;
+		    font-size: 1.095em;
+		    letter-spacing: -0.4px;
+		    line-height: 1.55;
 		}
 	}
 
 h1 {
 	font-size: 2em;
 	line-height: 1.25;
+	margin-top: 0.5em;
+	margin-bottom: 0.25em;
+}
+.wf-inactive h1 {
+	font-family: "New Times Roman", serif;
+	font-size: 2em;
+	font-weight: bold;
+	line-height: 1.25
 }
 	@media only screen and (min-width: 25em) {
 	    h1 {
 		    font-size: 2.25em;
 		    line-height: 1.25;
+		}
+		.wf-inactive h1 {
+			font-size: 2em;
+			line-height: 1.25; 
+			letter-spacing: -1px;
+			margin-top: 0.65em;
 		}
 	}
 	
@@ -154,6 +167,10 @@ h1 {
 		    font-size: 2.5em;
 		    line-height: 1.125;
 		}
+		.wf-inactive h1 {
+			font-size: 2.4em;
+			margin-top: 0.5em;
+		}
 	}
 	
 	@media only screen and (min-width: 56.25em) {
@@ -161,6 +178,10 @@ h1 {
 	    	font-size: 3em;
 		    line-height: 1.125;
 	    }
+		.wf-inactive h1 {
+			font-size: 2.9em;
+			margin-top: 0.45em;
+		}
 	}
 	
 	@media only screen and (min-width: 81.25em) {
@@ -562,13 +583,13 @@ body:before {
 		} 
 	}
 
-.wf-active .nav-menu-toggle:before {
+.fontface .nav-menu-toggle:before {
 	content: "\f0c9";
 	font-family: FontAwesome;
 	padding-right: 0.25em;
 }
 
-.wf-active .nav-is-active .nav-menu-toggle:before {
+.fontface .nav-is-active .nav-menu-toggle:before {
 	content: "\f057";
 }
 
@@ -855,7 +876,7 @@ body:before {
 	z-index: 99;
 }
 
-.wf-active .ui-toggle-button:before {
+.fontface .ui-toggle-button:before {
 	color: #35475B;
 	content: "\f055";
 	font-family: FontAwesome;
@@ -866,7 +887,7 @@ body:before {
 	text-indent: 0;
 	top: 0.1em;
 }
-.wf-active .ui-toggle-button {
+.fontface .ui-toggle-button {
 	background-color: transparent;
 	height: 1.5em;
 	text-indent: -999em;
@@ -881,12 +902,12 @@ body:before {
 	color: #ffffff; 
 }
 
-.wf-active .ui-toggle-button[data-text="open"]:before {
+.fontface .ui-toggle-button[data-text="open"]:before {
 	content: "\f057";
 }
-.wf-active .ui-toggle-button:hover,
-.wf-active .ui-toggle-button:focus,
-.wf-active .ui-toggle-button:active {
+.fontface .ui-toggle-button:hover,
+.fontface .ui-toggle-button:focus,
+.fontface .ui-toggle-button:active {
 	background-color: transparent;
 }
 
