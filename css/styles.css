@@ -49,6 +49,7 @@ Sans-serif: "Alegreya Sans", Helvetica, Arial, sans-serif;
 	box-sizing: border-box;
 }
 
+body, 
 p, 
 th, 
 td, 
@@ -189,6 +190,11 @@ h1 {
 	    	font-size: 4em;
 		    line-height: 1.125;
 	    }
+		.wf-inactive h1 {
+			font-size: 3.9em;
+			letter-spacing: -2px;
+			margin-top: 0.45em;
+		}
 	}
 
 h2 {
@@ -424,6 +430,109 @@ h6 {
 /* ==========================================================================
    Modules
    ========================================================================== */
+
+/* form styles */
+form {
+	max-width: 43em;
+	margin: 0 auto;
+}
+	@media only screen and (min-width: 81.25em) {
+	    form {
+		    max-width: 48.375em;
+	    }
+	}
+
+.field-wrapper {
+	margin-bottom: 1em;
+	padding-right: 1em;
+}
+
+fieldset {
+	display: block;
+	margin-bottom: 1em;
+	width: 100%;
+}
+
+.field-wrapper.inline {
+	float: left;
+}
+
+.field-wrapper.third {
+	width: 100%;
+}
+	@media screen and (min-width: 43.75em) {
+		.field-wrapper.third {
+			width: 33.3333%; 
+		} 
+	}
+
+.field-wrapper.third.larger-only {
+	width: 100%;
+}
+	@media screen and (min-width: 43.75em) {
+		.field-wrapper.third.larger-only {
+			width: 100%; 
+		} 
+	}
+
+	@media screen and (min-width: 56.25em) {
+		.field-wrapper.third.larger-only {
+			width: 33.33333%; 
+		} 
+	}
+
+label, 
+legend {
+	display: block;
+	font-weight: bold;
+}
+
+input[type="text"], 
+input[type="search"], 
+input[type="email"], 
+input[type="tel"], 
+input[type="password"], 
+textarea {
+	border: solid 1px #a1a1a1;
+	border-radius: 0.15em;
+	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.125em;
+	padding: 0.35em;
+	width: 100%;
+}
+input[type="password"] {
+	font-family: Helvetica, Arial, sans-serif;
+}
+
+input[type="radio"]+label {
+	display: inline-block;
+	font-weight: normal;
+	max-width: 85%;
+	padding-left: 0.5em;
+	vertical-align: top;
+}
+
+input[type="submit"] {
+	background-color: #35475B;
+	background-image: -moz-linear-gradient(#55677B, #35475B);
+	background-image: -webkit-linear-gradient(#55677B, #35475B);
+	background-image: linear-gradient(#55677B, #35475B);
+	border-color: #55677B #55677B #35475B;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	-moz-border-radius: 0.25em / 0.25em;
+	-webkit-border-radius: 0.25em 0.25em;
+	border-radius: 0.15em / 0.15em;
+	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 1px 0 rgba(255, 255, 255, 0.2) inset, 0 1px 2px rgba(0, 0, 0, 0.05);
+	color: #ffffff;
+	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.25em;
+	padding: 0.35em 0.75em;
+}
+
+
+/* end form styles */
 
 /* header styles */
 #banner {
@@ -765,9 +874,9 @@ body:before {
 		font-weight: 900;
 		background: #35475B;
 		background-image: none;
-		-webkit-box-shadow: 0 3px 0 0 #171717;
-		-moz-box-shadow: 0 3px 0 0 #171717;
-		box-shadow: 0 3px 0 0 #171717;
+		-webkit-box-shadow: 0 3px 0 0 #35475B;
+		-moz-box-shadow: 0 3px 0 0 #35475B;
+		box-shadow: 0 3px 0 0 #35475B;
 		color: #ffffff; 
 	}
 }
@@ -855,9 +964,18 @@ body:before {
 }
 
 @media screen and (min-width: 43.75em) {
+	.menu-item.active-trail, .page_item.active-trail {
+		color: #35475B;
+		-webkit-box-shadow: 0 3px 0 0 #35475B;
+		-moz-box-shadow: 0 3px 0 0 #35475B;
+		box-shadow: 0 3px 0 0 #35475B;
+	}
 	.menu-item.active-trail > a, .page_item.active-trail > a {
-		background: #35475B;
-		color: #fff; 
+		color: #35475B;
+		text-shadow: none;
+	} 
+	.menu-item.active-trail > a:hover, .page_item.active-trail > a:hover {
+		color: #ffffff;
 	} 
 }
 
@@ -1079,8 +1197,99 @@ body:before {
     }
 }
 
-
+.section-header {
+	border-bottom: solid 1px #8BB1DD;
+	font-size: 1.125em;
+	font-variant: small-caps;
+	max-width: 38.22222222222222em;
+}
+	@media only screen and (min-width: 81.25em) {
+	    .section-header {
+		    max-width: 43em;
+	    }
+	}
 /* /content area styles */
+
+/* resume styles */
+.resume-entry {
+	max-width: 43em;
+	margin: 0 auto 1.5em auto;
+}
+	@media only screen and (min-width: 81.25em) {
+	    .resume-entry {
+		    max-width: 48.375em;
+	    }
+	}
+.resume-entry .title {
+	display: inline-block;
+	margin-top: 0;
+	width: 80%;
+}
+.resume-entry .timeframe {
+	display: block;
+	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+}
+	@media only screen and (min-width: 43.75em) {
+	    .resume-entry .timeframe {
+		    float: right;
+		    margin-top: 1em;
+		    text-align: right;
+			width: 18%;
+	    }
+	}
+.resume-entry .subtitle {
+	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-weight: normal;
+	margin-top: 0;
+}
+
+/* end resume styles */
+
+/* card styles */
+
+.flexbox .card-grouping {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-flow: row wrap;
+	flex-flow: row wrap;
+	justify-content: space-around;	
+	margin-left: -1%;
+	margin-right: -1%;	
+}
+
+.flexbox .card-grouping .card {
+	flex: 1 0 100%;
+	margin: 0 1% 1.5em;
+}
+	@media only screen and (min-width: 25em) {
+	    .flexbox .card-grouping .card {
+		    flex: 1 0 48%;
+	    }
+	}
+	@media only screen and (min-width: 56.25em) {
+	    .flexbox .card-grouping .card {
+		    flex: 1 0 31%;
+	    }
+	}
+
+.card {
+	background-color: #f1f1f1;
+}
+.card figcaption {
+	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
+	font-size: 1.125em;
+	font-weight: normal;
+	padding-left: 0.44444444444444em;
+	padding-right: 0.44444444444444em;
+}
+
+.card .roles {
+	font-size: 0.875em;
+	font-style: italic;
+	padding-left: 0.57142857142857em;
+	padding-right: 0.57142857142857em;
+}
+/* end card styles */
 
 /* figure styles */
 figure.small {
