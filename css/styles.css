@@ -500,6 +500,8 @@ textarea {
 	padding: 0.35em;
 	width: 100%;
 }
+
+/* web fonts don't work nicely in password fields in Safari */
 input[type="password"] {
 	font-family: Helvetica, Arial, sans-serif;
 }
@@ -1289,6 +1291,7 @@ body:before {
 	padding-left: 0.57142857142857em;
 	padding-right: 0.57142857142857em;
 }
+
 /* end card styles */
 
 /* figure styles */
