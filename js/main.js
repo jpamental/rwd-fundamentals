@@ -1,6 +1,32 @@
 
+/* Flexslider */
+$(window).load(function(){
+  $('.flexslider').flexslider({
+    animation: "slide",
+    controlNav: "thumbnails",
+    start: function(slider){
+      $('body').removeClass('loading');
+    }
+  });
+});
+
+/* Widowtamer */
+wt.fix({
+	elements: 'p',
+	chars: 15,
+	method: 'nbsp',
+	event: 'resize'
+});
+
+wt.fix({
+	elements: 'blockquote',
+	chars: 2,
+	method: 'nbsp',
+	event: 'resize'
+});
 
 
+/* Navigation functions */
 ;(function($, w, doc){
 
   "use strict";
