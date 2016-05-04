@@ -566,6 +566,9 @@ input[type="submit"] {
 	margin: 0;
 	padding: 1em 0;
 }
+.home .branding {
+	text-align: center;
+}
 
 #logo {
 	float: left;
@@ -578,7 +581,10 @@ input[type="submit"] {
 		    width: 7em;
 	    }
 	}
-
+.home #logo {
+	float: none;
+	margin: 1.5em auto;
+}
 .branding h1 {
 	color: #ffffff;
 	font-size: 2em;
@@ -608,7 +614,9 @@ input[type="submit"] {
 	font-weight: normal;
 	margin: 0;
 }
-
+.home .branding h2 {
+	max-width: none;
+}
 /* /header styles */
 
 /* navigation styles */
@@ -1151,6 +1159,12 @@ body:before {
 		max-width: none;
     }
 }
+.home .content-area h1 {
+	margin: 1.25em auto 1.5em auto;
+	max-width: none;
+	text-align: center;
+}
+
 .site-section-name {
 	color: #494949;
 	font-size: 1em;
@@ -1177,6 +1191,11 @@ body:before {
 		    max-width: 43em;
 	    }
 	}
+
+.intro {
+	font-size: 1.25em;
+	max-width: 34.4em;
+}
 /* /content area styles */
 
 /* resume styles */
