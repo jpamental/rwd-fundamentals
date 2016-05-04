@@ -13,7 +13,7 @@ $(window).load(function(){
 /* Widowtamer */
 wt.fix({
 	elements: 'p',
-	chars: 15,
+	chars: 12,
 	method: 'nbsp',
 	event: 'resize'
 });
