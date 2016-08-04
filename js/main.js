@@ -1,6 +1,9 @@
 
+
+
 /* Flexslider */
 $(window).load(function(){
+  try {
   $('.flexslider').flexslider({
     animation: "slide",
     controlNav: "thumbnails",
@@ -8,6 +11,9 @@ $(window).load(function(){
       $('body').removeClass('loading');
     }
   });
+  } catch(e) {
+	  return;
+  }
 });
 
 /* Widowtamer */
