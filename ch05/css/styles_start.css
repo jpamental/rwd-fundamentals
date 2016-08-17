@@ -958,6 +958,7 @@ body:before {
 		.menu-item .sub-menu a:hover,
 		.menu-item.active-trail .menu-item.active a {
 			font-weight: 900; 
+			background-color: transparent;
 		}
 
 	}
