@@ -6,6 +6,7 @@
 		
 		<link rel="dns-prefetch" href="//ajax.googleapis.com">
 		<link rel="dns-prefetch" href="//fonts.googleapis.com">
+		<link rel="dns-prefetch" href="//maxcdn.bootstrapcdn.com">
 
 		<!-- meta -->
 		<meta charset="utf-8">
@@ -33,10 +34,10 @@
 		<meta name="theme-color" content="#ffffff">
 
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="../css/normalize.css">
-        <link rel="stylesheet" href="../css/setup.css">
+        <link rel="stylesheet" href="../css/normalize.min.css">
+        <link rel="stylesheet" href="../css/setup.min.css">
         <link rel="stylesheet" href="css/styles_start.css">
-        <link href='https://fonts.googleapis.com/css?family=Alegreya:400,900,400italic,700italic,700|Alegreya+Sans:900,500italic,400italic,400' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Alegreya:400,900,400italic,700italic,700|Alegreya+Sans:900,400' rel='stylesheet' type='text/css'>
        <!--[if lt IE 9]>
 	        <script src="../js/vendor/respond.min.js"></script>
         <![endif]-->
@@ -81,17 +82,9 @@
 							weight: 900,
 							style: 'normal'
 						});
-					var fontH = new FontFaceObserver('Alegreya Sans', {
-							weight: 400,
-							style: 'italic'
-						});
-					var fontI = new FontFaceObserver('Alegreya Sans', {
-							weight: 500,
-							style: 'italic'
-						});
 						
 			
-					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load(), fontH.load(), fontI.load()]).then(function () {
+					Promise.all([fontA.load(), fontB.load(), fontC.load(), fontD.load(), fontE.load(), fontF.load(), fontG.load()]).then(function () {
 						document.documentElement.classList.remove("wf-inactive");
 						document.documentElement.classList.add("wf-active");
 			
@@ -259,14 +252,17 @@
 
 
 
-        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
-        <script src="../js/plugins.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js" defer></script>
+        <script>window.jQuery || document.write('<script src="../js/vendor/jquery-1.12.0.min.js" defer><\/script>')</script>
+        <script src="../js/plugins.js" defer></script>
 
         <!-- Widowtamer -->
-        <script src="../js/vendor/widowtamer-min.js"></script>
+        <script src="../js/vendor/widowtamer-min.js" defer></script>
 
-        <script src="js/main.js"></script>
+        <!-- classList polyfill -->
+        <script src="../js/vendor/classlist_polyfill.min.js" defer></script>
+
+        <script src="js/main.js" defer></script>
 
     </body>
 </html>
