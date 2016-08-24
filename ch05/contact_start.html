@@ -159,25 +159,27 @@
 			        <h1><a href="index_start.html" title="Return to Home Page">James Davidson</a></h1>
 			        <h2>user experience designer</h2>
 		        </div>
-			<a href="#nav" aria-controls="nav" class="nav-menu-toggle control" id="menu-toggle">Menu</a>
 	        </div>
         </header>
 		<nav role="navigation" class="nav clearfix main-nav" id="nav">
-			<ul class="nav-menu">
-				<li class="menu-item"><a href="about_start.html">About</a></li>
-				<li class="menu-item"><a href="resume_start.html">Resume</a></li>
-				<li class="menu-item"><a href="portfolio_start.html">Portfolio</a>
-					<ul class="sub-menu">
-						<li class="menu-item"><a href="portfolio_project1_start.html">Project 1</a></li>
-						<li class="menu-item"><a href="portfolio_project2_start.html">Project 2</a></li>
-						<li class="menu-item"><a href="portfolio_project3_start.html">Project 3</a></li>
-						<li class="menu-item"><a href="portfolio_project4_start.html">Project 4</a></li>
-						<li class="menu-item"><a href="portfolio_project5_start.html">Project 5</a></li>
-						<li class="menu-item"><a href="portfolio_project6_start.html">Project 6</a></li>
-					</ul>
-				</li>
-				<li class="menu-item active-trail active"><a href="contact_start.html">Contact</a></li>
-			</ul><!--/.nav-menu-->
+			<a href="#nav" aria-controls="nav" class="nav-menu-toggle control" id="menu-toggle">Menu</a>
+			<div class="main-nav-inner">
+				<ul class="nav-menu">
+					<li class="menu-item"><a href="about_start.html">About</a></li>
+					<li class="menu-item"><a href="resume_start.html">Resume</a></li>
+					<li class="menu-item"><a href="portfolio_start.html">Portfolio</a>
+						<ul class="sub-menu">
+							<li class="menu-item"><a href="portfolio_project1_start.html">Project 1</a></li>
+							<li class="menu-item"><a href="portfolio_project2_start.html">Project 2</a></li>
+							<li class="menu-item"><a href="portfolio_project3_start.html">Project 3</a></li>
+							<li class="menu-item"><a href="portfolio_project4_start.html">Project 4</a></li>
+							<li class="menu-item"><a href="portfolio_project5_start.html">Project 5</a></li>
+							<li class="menu-item"><a href="portfolio_project6_start.html">Project 6</a></li>
+						</ul>
+					</li>
+					<li class="menu-item"><a href="contact_start.html">Contact</a></li>
+				</ul><!--/.nav-menu-->
+			</div>
 		</nav>
 
 
@@ -197,22 +199,22 @@
 					</div>
 
 			    	<div class="field-wrapper inline third larger-only">
-				    	<label for="name"><b>Phone (optional)</b> </label>
+				    	<label for="phone"><b>Phone (optional)</b> </label>
 						<input type="tel" name="phone" id="phone" />
 			    	</div>
 
 					<fieldset>
 						<legend>I'd love to chat with you about:</legend>
 						<div class="field-wrapper inline third">
-							<input type="radio" name="radio1" id="project" value="A Project" />
+							<input type="radio" name="talkabout" id="project" value="A Project" />
 							<label for="project">A Project</label>
 						</div>
 						<div class="field-wrapper inline third">
-							<input type="radio" name="radio2" id="job_offer" value="Job Offer" />
+							<input type="radio" name="talkabout" id="job_offer" value="Job Offer" />
 							<label for="job_offer">A Job Offer</label>
 						</div>
 						<div class="field-wrapper inline third">
-							<input type="radio" name="radio3" id="general" value="General Conversation" checked="true" aria-checked="true"/>
+							<input type="radio" name="talkabout" id="general" value="General Conversation" checked="true" aria-checked="true"/>
 							<label for="general">General Conversation</label>
 						</div>
 					</fieldset>

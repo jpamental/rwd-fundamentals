@@ -125,6 +125,18 @@ p {
 	font-size: 1em;
 	line-height: 1.4375;
 	max-width: 43em;
+
+/* Warning: Needed for oldIE support, but words are broken up letter-by-letter */
+ -ms-word-break: break-all;
+     word-break: break-all;
+
+     /* Non standard for webkit */
+     word-break: break-word;
+
+-webkit-hyphens: auto;
+   -moz-hyphens: auto;
+    -ms-hyphens: auto;
+        hyphens: auto;
 }
 .wf-inactive p {
 	font-family: Georgia, "New Times Roman", serif;
@@ -688,7 +700,7 @@ body:before {
 	float: right;
 	font-family: "Alegreya Sans", Helvetica, Arial, sans-serif;
 	font-weight: normal;
-	margin-bottom: -1em;
+	margin-top: -2.25em;
 	padding: 0.2em 0.35em;
 	position: relative;
 	text-align: center;
@@ -721,9 +733,10 @@ body:before {
 .nav-menu-toggle:hover {
 	border-color: #35475B;
 	color: #35475B; 
+	outline: inherit;
 }
 
-.main-nav {
+.main-nav-inner {
 	background-color: #35475B;
 	-webkit-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
@@ -737,11 +750,11 @@ body:before {
 	width: 95%;
 	z-index: 15;
 } 
-.nav-is-active .main-nav {
+.nav-is-active .main-nav-inner {
 	left: 0;
 }
 	@media screen and (min-width: 43.75em) {
-		.main-nav {
+		.main-nav-inner {
 			background-color: #B7D0E8;
 			background: -moz-linear-gradient(top, #B7D0E8 0%, #8BB1DD 100%);
 			background: -webkit-linear-gradient(top, #B7D0E8 0%,#8BB1DD 100%);
@@ -751,7 +764,7 @@ body:before {
 			box-shadow: 0 1px 3px 0 rgba(0,0,0,0.5);
 			display: block;
 			left: 0;
-			margin: -1.25em auto 0 auto;
+			margin: -0.25em auto 0 auto;
 			float: none;
 			padding: 0; 
 			position: relative;
@@ -759,7 +772,7 @@ body:before {
 			width: 100%;
 			z-index: 15;
 		} 
-		.nav-is-active .main-nav {
+		.nav-is-active .main-nav-inner {
 			left: 0;
 		}
 }
@@ -922,8 +935,10 @@ body:before {
 }
 	@media only screen and (min-width: 43.75em) {
 		.menu-item:hover .sub-menu, 
-		.menu-item:focus .sub-menu, 
-		.menu-item.child-has-focus .sub-menu {
+		.menu-item a:focus + .sub-menu, 
+		.menu-item .sub-menu:focus,
+		.menu-item.child-has-focus .sub-menu, 
+		.sub-menu.has-focus {
 			top: 100%;
 			left: 0;
 			margin-right: -1px; 
