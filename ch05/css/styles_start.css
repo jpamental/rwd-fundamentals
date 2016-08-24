@@ -993,6 +993,15 @@ body:before {
 	top: 0.65em;
 	z-index: 99;
 }
+	@media only screen and (min-width: 43.75em) {
+		.ui-toggle-button {
+			display: none;
+			left: -999em;
+			position: absolute; 
+			visibility: hidden;
+		}
+	}
+
 .active-trail > .ui-toggle-button {
 	background-color: #35475B;
 }

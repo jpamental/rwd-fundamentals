@@ -106,6 +106,7 @@ document.getElementById('menu-toggle').addEventListener('click', function(e) {
 	}
 });
 
+// make dropdown menus tabbable - thanks Scott O'Hara!
 
 (function ( w, doc ) {
 
