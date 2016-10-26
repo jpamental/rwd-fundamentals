@@ -1498,3 +1498,32 @@ figcaption {
 
 /* /figure styles */
 
+/* element query Styles */
+
+	/* add switch for larger layout change */
+	@media only screen and (min-width: 71.875em) {
+	    .flexbox .card-grouping {
+		    margin-left: -18%;
+		    margin-right: -18%;
+	    }
+	    .flexbox .card-grouping .card {
+		    flex: 1 0 31%;
+	    }
+	}
+
+@element ".flexbox .card-grouping .card" and (min-width: 18em){
+  .flexbox .card-grouping .card figure > a, 
+  .flexbox .card-grouping .card figure > img {
+	  display: inline-block;
+	  float: left;
+	  width: 50%;
+  }
+  .flexbox .card-grouping .card figcaption, 
+  .flexbox .card-grouping .card p {
+	  display: inline-block;
+	  width: 50%;
+  }
+  
+}
+
+/* /element query styles */
