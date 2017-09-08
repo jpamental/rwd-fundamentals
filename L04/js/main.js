@@ -57,6 +57,7 @@ document.getElementById('menu-toggle').addEventListener('click', function(e) {
 		}
 	 } else {
 		document.body.classList.add('nav-is-active');
+		/*
 		if (document.getElementsByClassName('sub-menu')) {
 			
 			var subMenus = document.getElementsByClassName('sub-menu'), len = subMenus.length;
@@ -103,6 +104,7 @@ document.getElementById('menu-toggle').addEventListener('click', function(e) {
 			}
 			
 		}
+		*/
 	}
 });
 
